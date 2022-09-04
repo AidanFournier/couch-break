@@ -35,12 +35,12 @@ showReviewTotal(reviews.length, reviews[0].name, reviews[0].loyaltyUser)
 
 
 const you = {
-    userName: {firstName: 'Bobby', lastName: 'Brown'},
-    isReturning: 'yes',
+    userName: 'Bobby',
+    isReturning: true
 }
 
 
-function populateUser(isReturning, userName ) {
+function populateUser(isReturning : boolean, userName : string) {
     if (isReturning){
         returningUserDisplay.innerHTML = 'back'
     }
